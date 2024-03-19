@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="clock-container text-center">
+    <h1 class="clock">12:00:00 AM</h1>
+
+    <div class="alarm-input">
+        <input type="number" id="hour" min="1" max="12" placeholder="Hour">
+        <span>:</span>
+        <input type="number" id="minute" min="0" max="59" placeholder="Minute">
+        <span>:</span>
+        <input type="number" id="second" min="0" max="59" placeholder="Second">
+        <select id="ampm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+        <button id="setAlarm" class="set-alarm-btn">Set Alarm</button>
+    </div>
+
+    <div id="alarms">
+        <!-- Alarms list will be dynamically populated here -->
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
